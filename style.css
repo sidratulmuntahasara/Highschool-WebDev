@@ -5,68 +5,113 @@ html,body{
     background: #000;
 }
 
-.header{
-    height: 100vh;
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 142, 142);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(202, 145, 255);
+}
+
+header{
     width: 100%;
-    position: relative;
+    height: 0vh;
     animation: hue 10s infinite alternate;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .logo{
-    width: 5vw;
-    margin-left: 15px;
+    position: fixed;
+    float: left;
+    margin: 20px;
+    width: 4rem;
 }
 
-.nav-links{
-    padding: 28px 0;
-}
-
-.nav-links li{
-    display: inline-block;
-    margin: 0 5px;
-    padding-right: 50px;
-}
-
-.nav-links li a{
-    text-decoration: none;
-    color: #ffffff;
-    padding: 5px 0;
-    position: relative;
-}
-
-.nav-links li a::after{
-    content: '';
-    background: #60e7ff;
-    width: 0;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.5s;
-}
-
-.nav-links li a:hover::after{
+nav{
+    position: fixed;
     width: 100%;
 }
 
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul{
+    background: salmon;
+    opacity: 70%;
+}
+
+.logo.black{
+    opacity: 100%;
+}
+
+nav.black ul:hover{
+    opacity: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
 .content{
-    position: absolute;
-    left: 50%;
+    position: relative;
+    left: 25%;
     top: 50%;
     width: 90%;
     max-width: 900px;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
 }
 
 .content h1{
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.about-me{
+    position:relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: larger;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about-me h1{
     font-size: 65px;
     font-weight: 600;
     margin-bottom: 40px;
