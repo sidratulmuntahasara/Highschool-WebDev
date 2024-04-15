@@ -19,7 +19,8 @@ nav{
 }
 
 .logo{
-    width: 220px;
+    width: 5vw;
+    margin-left: 15px;
 }
 
 .nav-links{
