@@ -1,13 +1,9 @@
-/*can you make it dark themed portfolio?*/
-/*can you make the top navigation bar to be in one line instead of one below the other?*/
-
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    background-color: #333;
+    background: linear-gradient(145deg, #fa8072, #6e0087, #62c4eb, #005a87, #2f086e);
     color: #fff;
 }
 
@@ -31,19 +27,23 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li:hover{
+    background: linear-gradient(45deg, #6e0087, #62c4eb)
+}
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #ccc;
+    color: rgb(176, 239, 236);
 }
 
 section {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #444;
+    background-color: #000000;
     border-radius: 8px;
 }
 
@@ -59,7 +59,7 @@ ul {
 }
 
 ul li {
-    background-color: #555;
+    background-color: #000;
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
@@ -83,7 +83,7 @@ input, textarea {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #555;
+    background: linear-gradient(45deg, #3d3d3d, #acacac);
     color: #fff;
 }
 
@@ -106,76 +106,3 @@ footer {
     margin-top: 40px;
     color: #666;
 }
-
-
-/* 
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #e2e2e2;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-#portfolio div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-form > * {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #005a87;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #00415a;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #666;
-} */
