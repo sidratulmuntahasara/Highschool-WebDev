@@ -7,6 +7,11 @@ body {
     color: #fff;
 }
 
+a{
+    color: #f2cef5;
+    text-decoration: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -44,6 +49,12 @@ section {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #000000;
+    border-radius: 8px;
+}
+
+section .home img {
+    float: left;
+    margin-right: 20px;
     border-radius: 8px;
 }
 
@@ -104,5 +115,5 @@ button:hover {
 footer {
     text-align: center;
     margin-top: 40px;
-    color: #666;
+    color: #ffffff;
 }
