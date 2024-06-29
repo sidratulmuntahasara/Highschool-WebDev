@@ -1,89 +1,176 @@
-/* Reset some basic elements for consistency across browsers */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+/*Can you build me css based on the html codes, i want the portfolio to look cool*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Sustainable design: Use a light and dark theme for better energy efficiency on OLED screens */
 body {
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-    padding: 0 10%;
-    transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+/* About Section */
+.about {
+  background-color: #fff;
+  padding: 60px 0;
 }
 
-main {
-    margin: 2em 0;
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-section {
-    margin-bottom: 2em;
+.about-text {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.project-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 5px;
+.about-text p {
+  color: #777;
 }
 
-footer {
-    text-align: center;
-    padding: 1em 0;
-    border-top: 1px solid #ccc;
+.about-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-/* Media query for responsiveness */
-@media (max-width: 600px) {
-    body {
-        padding: 0 5%;
-    }
-    
-    nav ul {
-        flex-direction: column;
-    }
+.about-text span {
+  color: #ff4c29;
 }
 
-/* Dark mode for sustainability */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
-    
-    header {
-        background-color: #1f1f1f;
-    }
-    
-    .project-card {
-        background-color: #1f1f1f;
-        border-color: #333;
-    }
-    
-    footer {
-        border-color: #333;
-    }
+.about-text a {
+  color: #ff4c29;
+  text-decoration: none;
 }
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+/* Portfolio Section */
+
+.portfolio {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-item h3 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.portfolio-item p {
+  color: #777;
+}
+
+/* Contact Section */
+
+.contact {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #ff4c29;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+  }
+
+  .portfolio-item h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  .portfolio-item h3 {
+    font-size: 20px;
+  }
+}
+
+

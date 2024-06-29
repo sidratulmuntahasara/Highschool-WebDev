@@ -1,99 +1,155 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="logo">
-                <a href="#"><h1>P0rtf0li0.</h1></a>
-            </div>
-            <nav>
-                
-                <div class="menu">
-                    <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="#">PROFILE</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </div>
-
-         <div class="content"> 
-            <img src="./assets/cute_me.gif">
-            <h1>Hey There! <img src=""> This is me 😉</h1>
-        </div>
-    </div>
-    <div class="about-me">
-        <h1>About Me</h1>
-        <p>Hi! I am a web developer. I love to code and create new things. 
-            I am a quick learner and always ready to learn new things. 
-            I am a team player and always ready to help others. I am a hardworking person and always ready to work on new projects. 
-            I am a creative person and always ready to create new things. I am a good listener and always ready to listen to others. 
-            I am a good communicator and always ready to communicate with others. 
-            I am a good problem solver and always ready to solve problems. 
-            I am a good leader and always ready to lead others
-        </p>
-    </div> -->
-<!-- </body>
-</html> --> 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio showcasing my projects and skills.">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Build me a code for a personal portfolio that uses only html and css -->
     <header>
-        <h1>My Portfolio</h1>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio. I'm a web developer passionate about creating sustainable and efficient web solutions.</p>
-        </section>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project One</h3>
-                <p>Description of project one. Built with HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project Two</h3>
-                <p>Description of project two. Focused on performance and accessibility.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        </section>
-    </main>
-    
+    <section id="home">
+        <h1>Welcome to my Portfolio</h1>
+        <p>My name is John Doe and I am a web developer</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        </p>
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Mobile Development</li>
+            <li>SEO</li>
+            <li>Graphic Design</li>
+        </ul>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+            <img src="https://via.placeholder.com/150" alt="portfolio1">
+            <img src="https://via.placeholder.com/150" alt="portfolio2">
+            <img src="https://via.placeholder.com/150" alt="portfolio3">
+            <img src="https://via.placeholder.com/150" alt="portfolio4">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2020 John Doe</p>
     </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        #home {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #about {
+            background-color: #e4e4e4;
+        }
+
+        #services {
+            background-color: #d4d4d4;
+        }
+
+        #portfolio {
+            background-color: #c4c4c4;
+        }
+
+        #portfolio div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #contact {
+            background-color: #b4b4b4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+
+        button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </body>
 </html>
