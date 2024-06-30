@@ -201,3 +201,34 @@ footer {
     margin-top: 40px;
     color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-right: 1vw;
+    }
+
+    section .home img {
+        width: 100%;
+    }
+
+    .cardservice{
+        grid-template-columns: 1fr;
+    }
+
+    .cardportfolio{
+        grid-template-columns: 1fr;
+    }
+}
