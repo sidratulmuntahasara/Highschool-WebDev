@@ -126,6 +126,7 @@ ul li {
 .card:hover{
     background: linear-gradient(145deg,  rgba(167, 255, 154, 0.406), #111111, #000);
     border: #73a07ca5 1px solid;
+    color: #ffffff;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
     box-shadow: 1px 1px 1px 1px rgba(0, 117, 66, 0.347);
