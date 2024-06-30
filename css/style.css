@@ -103,11 +103,6 @@ ul li {
     border-radius: 4px;
 }
 
-#portfolio div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
 
 .cardservice{
     display: grid;
@@ -137,6 +132,39 @@ ul li {
     opacity: 0.5;
 }
 
+.card .icons{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.cardportfolio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcasecards{
+    color: #dddcdc;
+    padding: 15px;
+    border-radius: 10px;
+    border: #3d3d3d 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+}
+
+.showcasecards:hover{
+    background: linear-gradient(15deg, #ec9effbc, #270034, #1c0025);
+    margin-bottom: 50px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border: #ffffff 1px solid;
+}
 
 form > * {
     display: block;
@@ -155,7 +183,7 @@ input, textarea {
 
 
 button {
-    background-color: #870087;
+    background-color: #8000ab;
     color: white;
     padding: 10px 20px;
     border: none;
