@@ -49,7 +49,7 @@ nav ul li {
 }
 
 nav ul li:hover{
-    background: linear-gradient(45deg, #6e0087, #62c4eb)
+    background: linear-gradient(45deg, #6e0087, #62c4eb);
 }
 
 nav ul li a {
@@ -101,6 +101,7 @@ ul li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
+
 }
 
 
