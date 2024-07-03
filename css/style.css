@@ -250,6 +250,14 @@ footer {
         align-items: center;
     }
 
+    header h1 {
+        font-size: 5vw;
+    }
+
+    header img{
+        width: 12vw;
+    }
+
     nav ul {
         margin-top: 20px;
         font-size: small;
@@ -260,6 +268,16 @@ footer {
     }
 
     section .home img {
+        width: 100%;
+    }
+
+    section #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section #about img {
         width: 100%;
     }
 
